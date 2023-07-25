@@ -19,7 +19,7 @@ cd rclone
 echo "Downloading rclone" | indent
 curl -O -L --silent https://downloads.rclone.org/rclone-current-linux-amd64.zip
 echo "Unzipping rclone" | indent
-unzip -j rclone-current-linux-amd64.zip
+unzip -j -q rclone-current-linux-amd64.zip
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/rclone.sh"
