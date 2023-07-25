@@ -16,7 +16,9 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p rclone
 cd rclone
+echo "Downloading rclone" | indent
 curl -O -L --silent https://downloads.rclone.org/rclone-current-linux-amd64.zip
+echo "Unzipping rclone" | indent
 unzip -j rclone-current-linux-amd64.zip
 
 echo "exporting PATH" | indent
