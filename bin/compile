@@ -16,7 +16,8 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p rclone
 cd rclone
-curl -L --silent $DOWNLOAD_URL | unzip -j
+curl -O -L --silent https://downloads.rclone.org/rclone-current-linux-amd64.zip
+unzip -j rclone-current-linux-amd64.zip
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/rclone.sh"
